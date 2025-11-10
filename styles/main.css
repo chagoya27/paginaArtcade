@@ -58,7 +58,9 @@ main h2 {
 .info-video {
     padding: 20px 60px;
     display: flex;
-        background-color: #6C5F84;
+    flex-wrap: wrap;
+    background-color: #6C5F84;
+    
 }
 
 .info-video .descripcion{
@@ -95,6 +97,7 @@ main h2 {
 footer{
     background-color: #1a1a1a;
     height: 5rem;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,4 +106,30 @@ footer{
 .copy{
     color: #fff;
     letter-spacing: 5px;
+    text-align: center;
 }
+
+
+@media (width <= 600px) {
+
+    .info-video {
+        padding: 10px 20px;
+    }
+
+
+    .info-video .descripcion{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+
+    .video {
+        width: 100%;
+        margin: 10px auto;
+    }
+    
+}
+

@@ -11,12 +11,13 @@ h1,h2{
 
 .carts{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 body .frame {
     width: 24rem;
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: row;
     background: #fff;
@@ -27,7 +28,7 @@ body .frame {
 
 .principal {
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 
 /*estilos de la foto y letras*/
@@ -142,3 +143,13 @@ body .frame {
     text-align: justify;
 }
 
+
+
+@media (width<=600px) {
+
+    
+    body .frame {
+        margin: 20px auto;
+    }
+    
+}

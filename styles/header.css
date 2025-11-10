@@ -21,6 +21,7 @@ header .nav-links a{
     width: 15%;
 }
 
+
 header .nav-links a:hover{
     color: #39437c;
     font-size: 1.4rem;
@@ -29,3 +30,9 @@ header .nav-links a:hover{
 
 
 
+@media (width <= 600px) {
+
+    header .nav-links a{
+        font-size: 1rem;
+    }
+}
