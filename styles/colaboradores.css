@@ -1,0 +1,144 @@
+
+main{
+    padding: 40px;
+}
+
+h1,h2{
+    margin-bottom: 50px;
+    color: #39437c;
+}
+
+
+.carts{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body .frame {
+    width: 24rem;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    z-index: 6;
+}
+
+.principal {
+    width: 100%;
+    height: 400px;
+}
+
+/*estilos de la foto y letras*/
+.principal .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+}
+
+
+
+.principal .header .foto{
+    position: relative;
+    z-index: 8;
+    
+}
+
+.principal .header .image {
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    margin-bottom: 10px;
+    
+    
+}
+
+.principal .header .image img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    
+}
+
+.principal .header .text {
+    color: #606985;
+    text-align: center;
+    & .nombre{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/*estilos del spinner*/
+.spinner, .spinner:after{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-top: 2px solid #606985;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #606985;
+    border-left: 2px solid #606985;
+    position: relative; 
+    transition: all 1.5s ease-in-out;
+
+}
+
+.spinner2, .spinner2:after {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-top: 2px solid #606985;
+    border-right: 2px solid #606985;
+    border-bottom: 2px solid #606985;
+    border-left: 2px solid rgb(255, 255, 255);
+    transition: all 1.5s ease-in-out;
+}
+
+
+
+.principal .header .foto:hover .spinner{
+    animation: spinner-loading-izq 1.2s linear 1;
+} 
+
+
+.principal .header .foto:hover .spinner2{
+    animation: spinner-loading-der 1.2s linear 1;
+}
+
+
+@keyframes spinner-loading-izq {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner-loading-der {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.description{
+    padding: 2px 20px;
+    text-align: justify;
+}
+

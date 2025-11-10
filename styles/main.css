@@ -1,0 +1,106 @@
+.hero-image{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to right, rgba(0,0,0,0.8) 5%, rgba(0, 0, 0, 0.5)), url(../imagenes/principal.png); 
+    background-position: center;      /* Centra la imagen */
+    background-repeat: no-repeat;     /* Evita que se repita */
+    background-size: cover;           /* Cubre todo el contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+
+
+}
+
+.hero-image .bienvenida .info{
+    color: #ffffff;
+}
+
+.hero-image h1{
+    color: #ffffff;
+    letter-spacing: 10px;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+main h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #373E65;
+}
+
+.images-galery{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+
+}
+
+.images-galery .part-galery{
+    margin: 20px 0px;
+}
+
+.images-galery .part-galery-image{
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+.images-galery .part-galety-title{
+    text-align: center;
+    font-weight: 500;
+}
+
+.info-video {
+    padding: 20px 60px;
+    display: flex;
+        background-color: #6C5F84;
+}
+
+.info-video .descripcion{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info-video .descripcion p{
+    font-size: 1.5rem;
+    color:#fff;
+}
+
+
+.video {
+
+  width: 60%;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+footer{
+    background-color: #1a1a1a;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy{
+    color: #fff;
+    letter-spacing: 5px;
+}
